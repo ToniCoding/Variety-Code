@@ -12,7 +12,7 @@ def healthFunction(question,validInputs=("ADD","REM","KILL")):
 
 # Code
 print(f"Health is now {health}")
-healthAction = healthFunction("ADD will ad one HP, REM will remove one HP and KILL will kill the player.\n")
+healthAction = healthFunction("ADD will add one HP, REM will remove one HP and KILL will kill the player.\n")
 
 # Actions taken
 if healthAction == "ADD":
