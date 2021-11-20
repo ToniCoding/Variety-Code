@@ -1,10 +1,10 @@
-let headphonesImg = document.getElementById('imgHeadphonesForSounds');
-headphonesImg.setAttribute('src', 'img/no-headphones.png');
+let theHTMLItem = document.getElementById('itemToSwitch');
+theHTMLItem.setAttribute('attributeToChange', 'valueOfAttribute');
 
-function ChangeimgHeadphonesForSounds(){
-    let isItOn = headphonesImg.getAttribute('src');
-    if(isItOn === 'img/no-headphones.png'){
-        headphonesImg.setAttribute('src', 'img/headphones.png')
-    } else if(isItOn === 'img/headphones.png'){
-        headphonesImg.setAttribute('src', 'img/no-headphones.png')
+function itemSwitcher(){
+    let itemActualStatus = theHTMLItem.getAttribute('attributeToChange');
+    if(itemActualStatus === 'newValue'){
+        headphonesImg.setAttribute('attributeToChange', 'valueOfAttribute')
+    } else if(itemActualStatus === 'newValue'){
+        headphonesImg.setAttribute('attributeToChange', 'valueOfAttribute')
 }};
