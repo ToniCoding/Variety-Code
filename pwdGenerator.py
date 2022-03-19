@@ -1,3 +1,5 @@
+# Password generator. There are some things left to be done and to be improved. I'll replace this file with the updated one when I update it.
+
 # Imports.
 from random import choice
 
