@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CouchDB - Instalación</title>
+    <link rel="icon" href="../img/sofa.png">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body style="background-color: black;">
+    <div class="mainWrapper"> <!-- {Contenedor} Principal -->
+        <div class="navWrapper"> <!-- {Contenedor} Barra de navegación -->
+            <div class="logoWrapper"> <!-- {Contenedor} Logo -->
+                <a href="../index.html"><img src="../img/couchDB-DarkLogo.png" height="120" width="200" alt="errorLoadingImg" title="CouchDB and relaaax..."></a>
+            </div>
+            <div class="navBarWrapper"> <!-- {Contenedor} Menú de navegación -->
+                <nav>
+                    <ul class="noListStyle navBar">
+                        <li><a href="./story.html" class="noLinkDeco" title="¡Conoce a CouchDB!" tabindex="4">Historia</a></li>
+                        <li><a href="./install.html" class="noLinkDeco" id="active" title="Aprende a instalar CouchDB" tabindex="3">Instalación</a></li>
+                        <li><a href="./docs.html" class="noLinkDeco" title="Aprende a usar CouchDB" tabindex="2">Documentación</a></li>
+                        <li><a href="./acs.html" class="noLinkDeco" title="Configura el sitio web a tu manera" tabindex="1">Otros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr class="dividerHalfWidth">
+        <div class="contentWrapper"> <!-- {Contenedor} Contenido -->
+            <div class="instalationHigherWrapper">
+                <div class="indexingStepWrapper">
+                    <h3>Instalación</h3>
+                    <ol>
+                        <li><a href="#instalacion" class="noLinkDeco">Guía y manual de instalación</a></li>
+                    </ol>
+                    <h3>Sintáxis</h3>
+                    <ol>
+                        <li><a href="#creaBase" class="noLinkDeco">Crear base de datos</a></li>
+                        <li><a href="#borrarBase" class="noLinkDeco">Borrar base de datos</a></li>
+                        <li><a href="#insertarDocu" class="noLinkDeco">Insertar documento</a></li>
+                        <li><a href="#actualizaDocu" class="noLinkDeco">Actualizar documento</a></li>
+                        <li><a href="#borrarDocu" class="noLinkDeco">Borrar documento</a></li>
+                    </ol>
+                </div>
+                <div class="docStepWrapper">
+                    <table border="3px">
+                        <tr>
+                            <th>Captura</th>
+                            <th>Descripción</th>
+                        </tr>
+                        <tr>
+                            <td id="instalacion"><p>¡Descarga aquí el manual y la guía de la instalación en detalle!</p></td>
+                            <td><a href="../pdf/Guía de instalación de CouchDB.pdf"><button class="downloadButton"><img src="../img/bx-download.svg" alt="Error loading resource"></button></a></td>
+                        </tr>
+                        <tr>
+                            <td id="creaBase"><img src="../img/instalacion01.png" alt="Error loading resource" width="600" height="400"></td>
+                            <td>Crear base de datos<br/><i>Comando: curl -u admin:1234 -X PUT http://127.0.0.1:5984/supermercado</i></td>
+                        </tr>
+                        <tr>
+                            <td id="borrarBase"><img src="../img/instalacion02.png" alt="Error loading resource" width="600" height="400"></td>
+                            <td>Borrar base de datos<br/><i>Comando: curl -u admin:1234 -X DELETE http://127.0.0.1:5984/supermercado</i></td>
+                        </tr>
+                        <tr>
+                            <td id="insertarDocu"><img src="../img/instalacion03.png" alt="Error loading resource" width="600" height="400"></td>
+                            <td>Insertar documento<br/><i>Comando: curl -u admin:1234 -X PUT http://127.0.0.1:5984/supermercado/UUID -d '{"nombre": "Manzana", "tipo" : "fruta", "precio" : 5}'</i></td>
+                        </tr>
+                        <tr>
+                            <td id="actualizaDocu"><img src="../img/instalacion04.png" alt="Error loading resource" width="600" height="400"></td>
+                            <td>Actualizar documento<br/><i>Comando: curl -u admin:1234 -X PUT http://127.0.0.1:5984/supermercado/98c003b03bc8aa87cb05983d1c000713 -d '{"_rev": "1-eba25568090eb2dfffad770b55147a67","nombre": "Manzana", "tipo" : "fruta", "precio" : 4}'</i></td>
+                        </tr>
+                        <tr>
+                            <td id="borrarDocu"><img src="../img/instalacion05.png" alt="Error loading resource" width="600" height="400"></td>
+                            <td>Borrar documento<br/><i>Comando: curl -u admin:1234 -X DELETE http://127.0.0.1:5984/supermercado/98c003b03bc8aa87cb05983d1c000713?rev=2-298fdb46385be60609b242b3e5cc3566</i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footerWrapper"> <!-- {Contenedor} Pie de página -->
+            <div class="devWrapper"> <!-- {Contenedor} Información acerca de los desarrolladores -->
+                <h4>Desarrolladores web</h4>
+                <ul class="noListStyle devList">
+                    <li>- Vallejo Moya, Antonio. Diseño y programación web.</li>
+                    <li>- Aranda Álvarez, Ángel. Redactar documentos e instalación de CouchDB.</li>
+                    <li>- Borsan, Viorel Mihai. Reunir datos y redactarlos, y estructurar información.</li>
+                    <li>- Novillo Muñoz, Iván. Gráficas de rendimiento e instalación de CouchDB</li>
+                </ul>
+            </div>
+            <div class="contactWrapper"> <!-- {Contenedor} Contacto con la empresa -->
+                <h4>Contacta con D_Web</h4>
+                <div class="socialMediaWrapper">
+                    <ul class="noListStyle">
+                        <li><a href="./pg/contactForm.html"><img src="../img/inbox.png" height="50" width="60" alt="errLoading-sMedia" title="Contacto directo"></a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=support@couchdb.com&su=Consulta&body=Coméntanos que necesitas. :)"><img src="../img/gmail.png" height="50" width="60" alt="errLoading-sMedia" title="Correo electrónico"></a></li>
+                        <li><a href="https://isitchristmas.com/"><img src="../img/telefono.png" height="50" width="60" alt="errLoading-sMedia" title="Teléfono móvil"></a></li>
+                        <li><a href="https://twitter.com/couchdb"><img src="../img/twitter.png" height="50" width="60" alt="errLoading-sMedia" title="Twitter"></a></li>
+                        <li><a href="https://www.instagram.com/p/B_9qHH3A7lu/"><img src="../img/instagram.png" height="50" width="60" alt="errLoading-sMedia" title="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="externalDocsWrapper"> <!-- {Contenedor} Documentación externa y declaración de Copyright -->
+                <div class="additionalDocsWrapper">
+                    <h4>Documentación adicional sobre CouchDB</h4>
+                    <ul class="noListStyle">
+                        <li><a href="https://couchdb.apache.org/" class="noLinkDecoAlt">Página oficial de CouchDB</a></li>
+                        <li><a href="https://github.com/apache/couchdb" class="noLinkDecoAlt">Apache CouchDB en GitHub</a></li>
+                        <li><a href="https://es.wikipedia.org/wiki/CouchDB" class="noLinkDecoAlt">Wikipedia CouchDB</a></li>
+                        <li><a href="https://www.adictosaltrabajo.com/tag/couchdb/" class="noLinkDecoAlt">Adictos al trabajo</a></li>
+                    </ul>
+                </div>
+                <div class="cRightWrapper">
+                    <p>Reservados todos los derechos &copy; 2005-2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
