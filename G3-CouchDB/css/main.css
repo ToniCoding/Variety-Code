@@ -68,6 +68,22 @@
     text-decoration: underline;
 }
 
+/* [CLASE GENERAL] Para todos los contenedores de cookies. */
+.cookies {
+    position: fixed;
+    display: block;
+    z-index: 1;
+    bottom: 1.5em;
+    right: 75%;
+    padding: 1em;
+    margin-left: 1em;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid #babae7;
+    background-color: #6464fd;
+    color: whitesmoke;
+}
+
 /* [CLASE GENERAL] Para todo el texto en modo oscuro. */
 .centeredDarkBG {
     position: inherit;
@@ -87,6 +103,13 @@
     margin: 1em;
     width: 20em;
     height: 2.5em;
+}
+
+/* [CLASE GENERAL] Variante de botón. */
+.btnMisc {
+    width: 5em;
+    height: 2em;
+    border-radius: 5px;
 }
 
 /* Clases específicas */

@@ -1,116 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CouchDB - Inicio</title>
-    <link rel="icon" href="./img/sofa.png">
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body style="background-color: black;">
-    <div class="mainWrapper"> <!-- {Contenedor} Principal -->
-        <div class="navWrapper"> <!-- {Contenedor} Barra de navegación -->
-            <div class="logoWrapper"> <!-- {Contenedor} Logo -->
-                <img src="./img/couchDB-DarkLogo.png" height="120" width="200" alt="errorLoadingImg" title="CouchDB and relaaax...">
-            </div>
-            <div class="navBarWrapper"> <!-- {Contenedor} Menú de navegación -->
-                <nav>
-                    <ul class="noListStyle navBar">
-                        <li><a href="./pg/story.html" class="noLinkDeco" title="¡Conoce a CouchDB!" tabindex="4">Historia</a></li>
-                        <li><a href="./pg/install.html" class="noLinkDeco" title="Aprende a instalar CouchDB" tabindex="3">Instalación</a></li>
-                        <li><a href="./pg/docs.html" class="noLinkDeco" title="Aprende a usar CouchDB" tabindex="2">Documentación</a></li>
-                        <li><a href="./pg/acs.html" class="noLinkDeco" title="Configura el sitio web a tu manera" tabindex="1">Otros</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <hr class="dividerHalfWidth">
-        <div class="contentWrapper"> <!-- {Contenedor} Contenido -->
-            <div class="presentationWrapper">
-                <div class="centeredDarkBG">
-                    <h2>CouchDB: Un gestor de bases de datos</h2>
-                    <p>CouchDB es un gestor de bases de datos de código abierto, se trata de una base de datos NoSQL que emplea JSON para almacenar los datos y JavaScript como lenguaje de consulta.</p>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CouchDB - Inicio</title>
+        <link rel="icon" href="./img/sofa.png">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body style="background-color: black;">
+        <div class="mainWrapper"> <!-- {Contenedor} Principal -->
+            <div class="navWrapper"> <!-- {Contenedor} Barra de navegación -->
+                <div class="logoWrapper"> <!-- {Contenedor} Logo -->
+                    <img src="./img/couchDB-DarkLogo.png" height="120" width="200" alt="errorLoadingImg" title="CouchDB and relaaax...">
                 </div>
-                <div class="centeredDarkBG">
-                    <h2>Lo que encontrarás en nuestra web</h2>
-                    <p>Se encontrará información, historia, guía de instalación y otras utilidades que permiten al usuario conocer más acerca de CouchDB y su funcionamiento como gestor de bases de datos noSQL.</p>
-                </div>
-                <div class="centeredDarkBG">
-                    <h2>Características de CouchDB almacena datos y cómo trabaja con ellos - Pt. 1</h2>
-                    <p>Las características más peculiares que tiene CouchDB es la facilidad con la que permite hacer replicaciones y la tolerancia a fallos, lo cual a día de hoy, mantener nuestro servicio online el mayor tiempo posible, es vital.CouchDB almacena los datos como "documentos", esto es, uno o más pares campo/valor expresados en JSON. Los valores de los campos pueden ser datos simples como cadenas de caracteres, números o fechas. Pero también se pueden usar listas ordenadas y vectores asociativos. Todos los documentos en una base de datos CouchDB tienen un identificador único y no requieren un esquema determinado.</p>
-                </div>
-                <div class="centeredDarkBG">
-                    <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Semántica ACID - Pt. 2</h2>
-                    <p>
-                        CouchDB provee una semántica de atomicidad (propiedad que permite saber si algo se ha realizado o no), consistencia, aislamiento y durabilidad​. Lo hace implementando una forma de control de concurrencia multiversión, lo que significa que CouchDB puede manejar un gran número de lectores y escritores en paralelo, sin que surjan conflictos.
-                    </p>
-                </div>
-                <div class="centeredDarkBG">
-                    <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Arquitectura distribuida con replicación - Pt. 3</h2>
-                    <p>
-                        CouchDB se diseñó teniendo en mente la replicación bidireccional (o sincronización) y la operación off-line. Eso significa que múltiples réplicas pueden tener cada una sus propias copias de los mismos datos, modificarlas y luego sincronizar esos cambios en un momento posterior.
-                    </p>
-                </div>
-                <div class="centeredDarkBG">
-                    <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Interfaz REST - Pt. 4</h2>
-                    <p>
-                        Todos los ítems tienen una URI única que queda expuesta vía HTTP. REST usa los métodos HTTP POST, GET, PUT y DELETE para las cuatro operaciones básicas CRUD (Create, Read, Update, Delete) con todos los recursos.
-                    </p>
-                </div>
-                <div class="centeredDarkBG">
-                    <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Operaciones de datos off-line - Pt. 5</h2>
-                    <p>
-                        CouchDB puede replicar datos a dispositivos (como teléfonos inteligentes) que pueden quedar offline y manejar automáticamente la sincronización de los datos cuando el dispositivo vuelve a estar en línea.
-                    </p>
-                </div>
-                <div class="centeredDarkBG">
-                    <h2>Empresas que usan CouchDB para sus bases de datos</h2>
-                    <p>
-                        &rightarrow; CouchDB se usa en determinadas aplicaciones para Android, tales como "SpreadLyrics".<br/>
-                        &rightarrow; Ubuntu para su servicio de sincronización "Ubuntu One" hasta noviembre de 2011​. Fue descontinuado por problemas de escalabilidad.<br/>
-                        &rightarrow; La BBC, para sus plataformas de contenidos dinámicos.<br/>
-                    </p>
+                <div class="navBarWrapper"> <!-- {Contenedor} Menú de navegación -->
+                    <nav>
+                        <ul class="noListStyle navBar">
+                            <li><a href="./pg/story.html" class="noLinkDeco" title="¡Conoce a CouchDB!" tabindex="4">Historia</a></li>
+                            <li><a href="./pg/install.html" class="noLinkDeco" title="Aprende a instalar CouchDB" tabindex="3">Instalación</a></li>
+                            <li><a href="./pg/docs.html" class="noLinkDeco" title="Aprende a usar CouchDB" tabindex="2">Documentación</a></li>
+                            <li><a href="./pg/acs.html" class="noLinkDeco" title="Configura el sitio web a tu manera" tabindex="1">Otros</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
-        <div class="footerWrapper"> <!-- {Contenedor} Pie de página -->
-            <div class="devWrapper"> <!-- {Contenedor} Información acerca de los desarrolladores -->
-                <h4>Desarrolladores web</h4>
-                <ul class="noListStyle devList">
-                    <li>- Vallejo Moya, Antonio. Diseño y programación web.</li>
-                    <li>- Aranda Álvarez, Ángel. Redactar documentos e instalación de CouchDB.</li>
-                    <li>- Borsan, Viorel Mihai. Reunir datos y redactarlos, y estructurar información.</li>
-                    <li>- Novillo Muñoz, Iván. Gráficas de rendimiento e instalación de CouchDB</li>
-                </ul>
+            <hr class="dividerHalfWidth">
+            <div class="contentWrapper"> <!-- {Contenedor} Contenido -->
+                <div class="presentationWrapper">
+                    <div class="centeredDarkBG">
+                        <h2>CouchDB: Un gestor de bases de datos</h2>
+                        <p>CouchDB es un gestor de bases de datos de código abierto, se trata de una base de datos NoSQL que emplea JSON para almacenar los datos y JavaScript como lenguaje de consulta.</p>
+                    </div>
+                    <div class="centeredDarkBG">
+                        <h2>Lo que encontrarás en nuestra web</h2>
+                        <p>Se encontrará información, historia, guía de instalación y otras utilidades que permiten al usuario conocer más acerca de CouchDB y su funcionamiento como gestor de bases de datos noSQL.</p>
+                    </div>
+                    <div class="centeredDarkBG">
+                        <h2>Características de CouchDB almacena datos y cómo trabaja con ellos - Pt. 1</h2>
+                        <p>Las características más peculiares que tiene CouchDB es la facilidad con la que permite hacer replicaciones y la tolerancia a fallos, lo cual a día de hoy, mantener nuestro servicio online el mayor tiempo posible, es vital.CouchDB almacena los datos como "documentos", esto es, uno o más pares campo/valor expresados en JSON. Los valores de los campos pueden ser datos simples como cadenas de caracteres, números o fechas. Pero también se pueden usar listas ordenadas y vectores asociativos. Todos los documentos en una base de datos CouchDB tienen un identificador único y no requieren un esquema determinado.</p>
+                    </div>
+                    <div class="centeredDarkBG">
+                        <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Semántica ACID - Pt. 2</h2>
+                        <p>
+                            CouchDB provee una semántica de atomicidad (propiedad que permite saber si algo se ha realizado o no), consistencia, aislamiento y durabilidad​. Lo hace implementando una forma de control de concurrencia multiversión, lo que significa que CouchDB puede manejar un gran número de lectores y escritores en paralelo, sin que surjan conflictos.
+                        </p>
+                    </div>
+                    <div class="centeredDarkBG">
+                        <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Arquitectura distribuida con replicación - Pt. 3</h2>
+                        <p>
+                            CouchDB se diseñó teniendo en mente la replicación bidireccional (o sincronización) y la operación off-line. Eso significa que múltiples réplicas pueden tener cada una sus propias copias de los mismos datos, modificarlas y luego sincronizar esos cambios en un momento posterior.
+                        </p>
+                    </div>
+                    <div class="centeredDarkBG">
+                        <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Interfaz REST - Pt. 4</h2>
+                        <p>
+                            Todos los ítems tienen una URI única que queda expuesta vía HTTP. REST usa los métodos HTTP POST, GET, PUT y DELETE para las cuatro operaciones básicas CRUD (Create, Read, Update, Delete) con todos los recursos.
+                        </p>
+                    </div>
+                    <div class="centeredDarkBG">
+                        <h2>Cómo CouchDB almacena datos y cómo trabaja con ellos - Operaciones de datos off-line - Pt. 5</h2>
+                        <p>
+                            CouchDB puede replicar datos a dispositivos (como teléfonos inteligentes) que pueden quedar offline y manejar automáticamente la sincronización de los datos cuando el dispositivo vuelve a estar en línea.
+                        </p>
+                    </div>
+                    <div class="centeredDarkBG">
+                        <h2>Empresas que usan CouchDB para sus bases de datos</h2>
+                        <p>
+                            &rightarrow; CouchDB se usa en determinadas aplicaciones para Android, tales como "SpreadLyrics".<br/>
+                            &rightarrow; Ubuntu para su servicio de sincronización "Ubuntu One" hasta noviembre de 2011​. Fue descontinuado por problemas de escalabilidad.<br/>
+                            &rightarrow; La BBC, para sus plataformas de contenidos dinámicos.<br/>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="contactWrapper"> <!-- {Contenedor} Contacto con la empresa -->
-                <h4>Contacta con D_Web</h4>
-                <div class="socialMediaWrapper">
-                    <ul class="noListStyle">
-                        <li><a href="./pg/contactForm.html"><img src="./img/inbox.png" height="50" width="60" alt="errLoading-sMedia" title="Contacto directo"></a></li>
-                        <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=support@couchdb.com&su=Consulta&body=Coméntanos que necesitas. :)"><img src="./img/gmail.png" height="50" width="60" alt="errLoading-sMedia" title="Correo electrónico"></a></li>
-                        <li><a href="https://isitchristmas.com/"><img src="./img/telefono.png" height="50" width="60" alt="errLoading-sMedia" title="Teléfono móvil"></a></li>
-                        <li><a href="https://twitter.com/couchdb"><img src="./img/twitter.png" height="50" width="60" alt="errLoading-sMedia" title="Twitter"></a></li>
-                        <li><a href="https://www.instagram.com/p/B_9qHH3A7lu/"><img src="./img/instagram.png" height="50" width="60" alt="errLoading-sMedia" title="Instagram"></a></li>
+            <div class="footerWrapper"> <!-- {Contenedor} Pie de página -->
+                <div class="devWrapper"> <!-- {Contenedor} Información acerca de los desarrolladores -->
+                    <h4>Desarrolladores web</h4>
+                    <ul class="noListStyle devList">
+                        <li>- Ficticio. Diseño y programación web.</li>
+                        <li>- Ficticio. Redactar documentos e instalación de CouchDB.</li>
+                        <li>- Ficticio. Reunir datos y redactarlos, y estructurar información.</li>
+                        <li>- Ficticio. Gráficas de rendimiento e instalación de CouchDB</li>
                     </ul>
                 </div>
-            </div>
-            <div class="externalDocsWrapper"> <!-- {Contenedor} Documentación externa y declaración de Copyright -->
-                <div class="additionalDocsWrapper">
-                    <h4>Documentación adicional sobre CouchDB</h4>
-                    <ul class="noListStyle">
-                        <b><li><a href="https://couchdb.apache.org/" class="noLinkDecoAlt">Página oficial de CouchDB</a></li></b>
-                        <b><li><a href="https://github.com/apache/couchdb" class="noLinkDecoAlt">Apache CouchDB en GitHub</a></li></b>
-                        <b><li><a href="https://es.wikipedia.org/wiki/CouchDB" class="noLinkDecoAlt">Wikipedia CouchDB</a></li></b>
-                        <b><li><a href="https://www.adictosaltrabajo.com/tag/couchdb/" class="noLinkDecoAlt">Adictos al trabajo</a></li></b>
-                    </ul>
+                <div class="contactWrapper"> <!-- {Contenedor} Contacto con la empresa -->
+                    <h4>Contacta con D_Web</h4>
+                    <div class="socialMediaWrapper">
+                        <ul class="noListStyle">
+                            <li><a href="./pg/contactForm.html"><img src="./img/inbox.png" height="50" width="60" alt="errLoading-sMedia" title="Contacto directo"></a></li>
+                            <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=support@couchdb.com&su=Consulta&body=Coméntanos que necesitas. :)"><img src="./img/gmail.png" height="50" width="60" alt="errLoading-sMedia" title="Correo electrónico"></a></li>
+                            <li><a href="https://isitchristmas.com/"><img src="./img/telefono.png" height="50" width="60" alt="errLoading-sMedia" title="Teléfono móvil"></a></li>
+                            <li><a href="https://twitter.com/couchdb"><img src="./img/twitter.png" height="50" width="60" alt="errLoading-sMedia" title="Twitter"></a></li>
+                            <li><a href="https://www.instagram.com/p/B_9qHH3A7lu/"><img src="./img/instagram.png" height="50" width="60" alt="errLoading-sMedia" title="Instagram"></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="cRightWrapper">
-                    <p>Reservados todos los derechos &copy; 2005-2022</p>
+                <div class="externalDocsWrapper"> <!-- {Contenedor} Documentación externa y declaración de Copyright -->
+                    <div class="additionalDocsWrapper">
+                        <h4>Documentación adicional sobre CouchDB</h4>
+                        <ul class="noListStyle">
+                            <b><li><a href="https://couchdb.apache.org/" class="noLinkDecoAlt">Página oficial de CouchDB</a></li></b>
+                            <b><li><a href="https://github.com/apache/couchdb" class="noLinkDecoAlt">Apache CouchDB en GitHub</a></li></b>
+                            <b><li><a href="https://es.wikipedia.org/wiki/CouchDB" class="noLinkDecoAlt">Wikipedia CouchDB</a></li></b>
+                            <b><li><a href="https://www.adictosaltrabajo.com/tag/couchdb/" class="noLinkDecoAlt">Adictos al trabajo</a></li></b>
+                        </ul>
+                    </div>
+                    <div class="cRightWrapper">
+                        <p>Reservados todos los derechos &copy; 2005-2022</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+        <div class="cookies" id="cookies">
+            <h3>Cookies</h3><br/>
+            <p>
+                Haz clic en aceptar para aceptar las cookies. Una vez las aceptes, aceptas nuestros <a href="./pg/acs.html" class="noLinkDeco">términos de privacidad y servicios</a>.
+                <br/><br/><button onclick="cookiesAceptadas()" class="btnMisc">Aceptar</button>
+            </p>
+        </div>
+    </body>
+    <script src="./js/misc.js"></script>
 </html>
